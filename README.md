@@ -61,7 +61,8 @@ The downloader can use a browser like this:
 if you are serving on port 80
 + Renaming the downloaded file to end with '.gz', like 'file.gz'
 + Opening the file with their archive extractor
-Or using netcat:
+
+Or your tech savvy client can netcat:
 + typing `nc 10.0.0.10 1174 | zcat -d > file.txt`, `zcat -d` decompresses
 
 ## Contribute!
