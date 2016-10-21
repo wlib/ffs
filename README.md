@@ -63,7 +63,7 @@ if you are serving on port 80
 + Opening the file with their archive extractor
 
 Or your tech savvy client can netcat:
-+ typing `nc 10.0.0.10 1174 | zcat -d > file.txt`, `zcat -d` decompresses
++ typing `nc 10.0.0.10 1174 | zcat -d > file.txt`
 
 ## Contribute!
 
