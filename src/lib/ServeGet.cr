@@ -36,7 +36,7 @@ module ServeGet
           client.close
           puts "[*] Server can continue sending files".info
         end
-      end    
+      end
     end
     
     # Does argument checks, if they pass it connects to the server
@@ -71,7 +71,7 @@ module ServeGet
       end
       # Decompress the content downloaded from the server and write it
       zipped = File.open("ffs.tmp", "w+") do |zipped|
-        zipped << socket.gets
+        IO.copy(socket, zipped)
       end
       puts "[+] File transfer done!".good
       filewrangle.unzip("ffs.tmp", rfile)
