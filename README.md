@@ -9,7 +9,7 @@ as simple as possible - a few keystrokes and done. Another target is to keep
 the application easy to configure and very light-weight.
 Features are also not overwhelming and easy to start on your first try.
 You can even download from the server without installing a client - 
-using telnet/netcat or your favorite web browser.
+using netcat or your favorite web browser.
 Written in Crystal, the program compiles to native binary code, 
 while maintaining the amazing natural feel Ruby has to offer.
 
@@ -48,6 +48,21 @@ Retrieve with the client like this:
 If you ever need help:
 
 `ffs -h` or `ffs --help` is always there
+
+## Downloading straight from a browser
+
+To simplify the task of downloading, you don't need to have ffs installed.
+Just run `sudo ffs -s -f myfile -p 80` to start serving on port 80, or
+`ffs -s -f myfile` to serve on the default port, 1174. In these examples, 
+we will assume that the server is at '10.0.0.10'
+
+The downloader can use a browser like this:
++ Typing in 10.0.0.10:1174 in their search bar or just 10.0.0.10
+if you are serving on port 80
++ Renaming the downloaded file to end with '.gz', like 'file.gz'
++ Opening the file with their archive extractor
+Or using netcat:
++ typing `nc 10.0.0.10 1174 | zcat -d > file.txt`, `zcat -d` decompresses
 
 ## Contribute!
 
