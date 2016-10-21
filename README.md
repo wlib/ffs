@@ -10,7 +10,7 @@ the application easy to configure and very light-weight.
 Features are also not overwhelming and easy to start on your first try.
 You can even download from the server without installing a client - 
 using telnet/netcat or your favorite web browser.
-Written in Crystal, the program runs native binary code, 
+Written in Crystal, the program compiles to native binary code, 
 while maintaining the amazing natural feel Ruby has to offer.
 
 ## Installing
@@ -23,8 +23,8 @@ source for your OS, there is a dependency:
 
 Once you've installed Crystal, open a shell, clone, build, and install
 
-`git clone https://github.com/wlib/ffs.git`
-`cd ffs/src`
++ `git clone https://github.com/wlib/ffs.git`
++ `cd ffs/src`
 
 You can build to your desktop, or install it on your system if you are root
 
@@ -35,7 +35,7 @@ It's really that easy...
 
 ## Usage
 
-FFS is simple enough for your grandma to figure out.
+FFS is simple enough for your grandma to figure out
 
 Start up a server like this:
 
@@ -60,5 +60,5 @@ so why not?
 4. Push to the branch `git push origin my-new-feature`
 5. Create a new Pull Request on github
 
-[Daniel Ethridge](https://github.com/wlib) - author
-[You](https://yourwebsite.com) - helped add...
++ [Daniel Ethridge](https://github.com/wlib) - author
++ [You](https://yourwebsite.com) - helped add...
